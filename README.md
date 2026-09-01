@@ -504,52 +504,119 @@ docker-compose up -d
 ```
 Hospital-Management-System/
 │
-├── web-app/               # Web application (React/Vue/Angular)
-│   ├── src/
-│   ├── public/
-│   ├── components/
-│   ├── pages/
-│   └── package.json
+├── app/                           # 📱 All client applications
+│   ├── web/                       # 🌐 Web application
+│   │   ├── src/
+│   │   ├── public/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── styles/
+│   │   ├── utils/
+│   │   ├── package.json
+│   │   └── README.md
+│   │
+│   ├── mobile-app/                # 📱 Mobile applications
+│   │   ├── ios/                   # iOS (Swift/Objective-C)
+│   │   │   ├── Hospital-Management/
+│   │   │   ├── Pods/
+│   │   │   └── Podfile
+│   │   │
+│   │   └── android/               # Android (Kotlin/Java)
+│   │       ├── app/
+│   │       ├── gradle/
+│   │       └── build.gradle
+│   │
+│   └── desktop/                   # 🖥️ Desktop application (Electron)
+│       ├── src/
+│       ├── main.js
+│       ├── preload.js
+│       └── package.json
 │
-├── mobile-app/            # React Native / Flutter mobile app
-│   ├── ios/               # iOS-specific code
-│   ├── android/           # Android-specific code
-│   ├── src/
-│   └── package.json
+├── backend/                       # 🔧 Backend API Server
+│   ├── routes/                    # API endpoints
+│   ├── controllers/               # Request handlers
+│   ├── models/                    # Database models
+│   ├── services/                  # Business logic
+│   ├── middleware/                # Express/custom middleware
+│   ├── utils/                     # Helper functions
+│   ├── config/                    # Configuration files
+│   ├── server.js / app.py
+│   ├── package.json / requirements.txt
+│   └── README.md
 │
-├── desktop-app/           # Electron desktop application
-│   ├── src/
-│   ├── main.js
-│   └── package.json
+├── database/                      # 💾 Database management
+│   ├── migrations/                # Database migration scripts
+│   ├── seeds/                     # Sample data
+│   ├── schema.sql
+│   └── README.md
 │
-├── backend/               # Node.js/Python backend API server
-│   ├── routes/
-│   ├── controllers/
-│   ├── models/
-│   ├── services/
-│   ├── middleware/
-│   ├── utils/
-│   └── server.js/app.py
+├── docs/                          # 📚 Documentation
+│   ├── api/                       # API documentation
+│   │   ├── ENDPOINTS.md
+│   │   ├── AUTHENTICATION.md
+│   │   └── ERROR_CODES.md
+│   │
+│   ├── guides/                    # User & developer guides
+│   │   ├── INSTALLATION.md
+│   │   ├── USER_GUIDE.md
+│   │   ├── DEVELOPER_GUIDE.md
+│   │   └── DEPLOYMENT.md
+│   │
+│   └── database/                  # Database documentation
+│       ├── SCHEMA.md
+│       └── DATA_DICTIONARY.md
 │
-├── database/              # Database schemas and migrations
-│   ├── migrations/
-│   ├── seeds/
-│   └── schema.sql
+├── tests/                         # 🧪 Test suites
+│   ├── unit/                      # Unit tests
+│   │   ├── backend/
+│   │   └── frontend/
+│   │
+│   ├── integration/               # Integration tests
+│   │   └── api/
+│   │
+│   └── e2e/                       # End-to-end tests
+│       ├── scenarios/
+│       └── utils/
 │
-├── docs/                  # Documentation
-│   ├── API_DOCS.md
-│   ├── SETUP.md
-│   └── USER_GUIDE.md
+├── config/                        # ⚙️ Configuration files
+│   ├── development.env
+│   ├── production.env
+│   ├── testing.env
+│   ├── database.config.js
+│   └── app.config.js
 │
-├── tests/                 # Test suites
-│   ├── unit/
-│   ├── integration/
-│   └── e2e/
+├── scripts/                       # 🔨 Utility scripts
+│   ├── setup.sh / setup.ps1      # Project setup script
+│   ├── deploy.sh / deploy.ps1    # Deployment script
+│   ├── migrate.sh / migrate.ps1  # Database migration script
+│   └── seed.sh / seed.ps1        # Seed database script
+│
+├── .github/
+│   └── workflows/                # 🔄 CI/CD workflows
+│       ├── test.yml
+│       ├── build.yml
+│       └── deploy.yml
 │
 ├── .gitignore
-├── docker-compose.yml     # Docker configuration
+├── docker-compose.yml             # 🐳 Docker configuration
+├── Dockerfile
+├── package.json                   # Root package.json for monorepo
+├── LICENSE
 └── README.md
 ```
+
+### Folder Descriptions
+
+| Folder | Purpose |
+|--------|---------|
+| **app/** | All client-side applications (Web, iOS, Android, Desktop) |
+| **backend/** | API server and business logic |
+| **database/** | Database schemas, migrations, and seed data |
+| **docs/** | Complete project documentation |
+| **tests/** | Unit, integration, and end-to-end tests |
+| **config/** | Environment configurations and app settings |
+| **scripts/** | Automation and deployment scripts |
+| **.github/workflows/** | GitHub Actions for CI/CD pipelines |
 
 ## 🤝 Contributing
 

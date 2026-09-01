@@ -1,0 +1,131 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.env.local
+.vscode/launch.json
+.vscode/extensions.json
+
+# Build outputs
+/build/
+/dist/
+/coverage/
+/.next/
+out/
+
+# Logs
+logs/
+*.log
+lerna-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+/database/*.sql.bak
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Docker
+docker-compose.override.yml
+
+# Certificates
+*.pem
+*.key
+*.crt
+
+# macOS
+.AppleDouble
+.AppleDB
+.LSOverride
+._*
+
+# Windows
+.classpath
+.project
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.history/
+
+# Local overrides
+local.*.json
+override*.js
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# IDE Python
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Mobile apps
+app/mobile-app/ios/Pods/
+app/mobile-app/ios/build/
+app/mobile-app/android/build/
+app/mobile-app/android/.gradle/
+
+# Desktop app
+app/desktop/dist/
+app/desktop/release/
+
+# Documentation
+docs/.cache/
+docs/.vuepress/dist/
