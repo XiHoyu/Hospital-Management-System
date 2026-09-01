@@ -321,143 +321,129 @@ This project is currently in the planning and setup phase. Full implementation w
 ## Technology Stack
 
 ### Frontend & Client Apps
-- **Web Application**: React.js / Vue.js / Angular
-- **Mobile Apps**: React Native / Flutter / Swift (iOS) / Kotlin (Android)
-- **Desktop App**: Electron.js
-- **UI Framework**: Material-UI / Tailwind CSS / Bootstrap
-- **State Management**: Redux / Vuex / Context API
-- **HTTP Client**: Axios / Fetch API
+- **Web Application**: Vue 3 with TypeScript + Vite
+- **Mobile Apps**: Capacitor (iOS & Android with Vue 3 UI)
+- **Desktop App**: Electron with Vue 3
+- **Build Tool**: Vite (instant HMR)
+- **State Management**: Pinia
+- **UI Styling**: UnoCSS (atomic CSS)
+- **HTTP Client**: Axios
 
 ### Backend & Server
-- **Runtime**: Node.js / Python / Java
-- **Framework**: Express.js / Django / Flask / Spring Boot
-- **API**: RESTful API / GraphQL
-- **Authentication**: JWT / OAuth 2.0
-- **Caching**: Redis
-- **Message Queue**: RabbitMQ / Kafka
+- **Runtime**: Node.js (v18+)
+- **Framework**: Express.js
+- **Language**: TypeScript
+- **Database**: DuckDB with Drizzle ORM
+- **Real-time**: Socket.io
+- **Authentication**: JWT
 
 ### Database & Storage
-- **Relational DB**: MySQL / PostgreSQL
-- **NoSQL**: MongoDB
-- **Search**: Elasticsearch
-- **File Storage**: AWS S3 / Google Cloud Storage / MinIO
-- **Cache**: Redis
+- **Primary Database**: DuckDB (embedded, in-process)
+- **ORM**: Drizzle ORM (type-safe)
+- **Migrations**: Custom migration scripts
+- **File Storage**: Local file system (or cloud storage)
 
 ### Security & Compliance
-- **Encryption**: TLS/SSL, AES-256
-- **API Security**: Rate limiting, API keys
-- **Data Protection**: HIPAA compliant encryption
-- **Authentication**: Two-Factor Authentication (2FA)
+- **Encryption**: TLS/SSL
+- **API Security**: Rate limiting, CORS
+- **Data Protection**: HIPAA compliance ready
+- **Authentication**: JWT with secure tokens
 
-### DevOps & Deployment
-- **Containerization**: Docker
-- **Orchestration**: Kubernetes / Docker Compose
-- **CI/CD**: GitHub Actions / GitLab CI / Jenkins
-- **Monitoring**: Prometheus / ELK Stack
-- **Hosting**: AWS / Google Cloud / Azure
+### DevOps & Build
+- **Package Manager**: pnpm (fast, efficient)
+- **Monorepo Tool**: Turbo (caching, parallelization)
+- **Containerization**: Docker + Docker Compose
+- **CI/CD**: GitHub Actions (ready)
+- **Testing**: Vitest + Vue Test Utils
+- **Linting**: ESLint + Prettier
 
-### Additional Libraries
-- **Video/Audio**: WebRTC / Twilio
-- **Payment Gateway**: Stripe / PayPal / Razorpay
-- **Notifications**: Firebase Cloud Messaging / Twilio
-- **Charts & Graphs**: Chart.js / D3.js / Recharts
-- **PDF Generation**: PDFKit / ReportLab
-- **Email Service**: SendGrid / AWS SES
+### Additional Tools
+- **Real-time Communication**: Socket.io
+- **Form Validation**: Vee-Validate + Zod
+- **Routing**: Vue Router 4
+- **Type Checking**: TypeScript + vue-tsc
+- **Documentation**: Markdown + Docusaurus (planned)
+
+For detailed information, see [TECH_STACK.md](TECH_STACK.md) and [TECH_STACK_SETUP.md](TECH_STACK_SETUP.md)
 
 ## Installation
 
 ### Prerequisites
-- Node.js (v14 or higher) or Python 3.8+
-- npm/yarn or pip
-- PostgreSQL/MySQL installed and running
-- Git installed
-- Docker (optional, for containerized deployment)
+- **Node.js**: v18.0.0 or higher
+- **pnpm**: v9.0.0 or higher (package manager)
+- **Git**: Latest version
+- **Docker**: Optional (for backend containerization)
 
-### Setup Steps
+### Quick Start
 
-#### 1. Clone the repository
 ```bash
+# 1. Clone repository
 git clone https://github.com/XiHoyu/Hospital-Management-System.git
 cd Hospital-Management-System
+
+# 2. Install dependencies
+pnpm install
+
+# 3. Start development
+pnpm dev
+
+# Applications will start on:
+# - Web: http://localhost:5173
+# - Backend API: http://localhost:3000
 ```
 
-#### 2. Backend Setup
+### Setup Instructions
+
+For complete setup with troubleshooting, see [TECH_STACK_SETUP.md](TECH_STACK_SETUP.md)
+
+#### Start Individual Apps
+
+**Web Application:**
 ```bash
-cd backend
-npm install
-# or for Python
-pip install -r requirements.txt
-
-# Create .env file with configuration
-cp .env.example .env
-# Edit .env with your database credentials and settings
-
-# Run database migrations
-npm run migrate
-# or
-python manage.py migrate
-
-# Start backend server
-npm start
-# Server will run on http://localhost:5000
+pnpm -rF @hospital/web run dev
+# Access: http://localhost:5173
 ```
 
-#### 3. Web Application Setup
+**Backend API:**
 ```bash
-cd ../web-app
-npm install
-
-# Create .env file
-cp .env.example .env
-# Edit .env with backend API URL
-
-# Start development server
-npm start
-# Web app will run on http://localhost:3000
+pnpm -rF @hospital/backend run dev
+# Access: http://localhost:3000
 ```
 
-#### 4. Mobile App Setup (React Native)
+**Mobile App (iOS):**
 ```bash
-cd ../mobile-app
-npm install
-
-# For iOS
-cd ios
-pod install
-cd ..
-npm run ios
-
-# For Android
-npm run android
+pnpm -rF @hospital/mobile run dev:ios
 ```
 
-#### 5. Desktop Application Setup (Electron)
+**Mobile App (Android):**
 ```bash
-cd ../desktop-app
-npm install
-
-# Start development
-npm start
-
-# Build for distribution
-npm run build
+pnpm -rF @hospital/mobile run dev:android
 ```
 
-#### 6. Access the Application
-- **Web App**: http://localhost:3000
-- **Backend API**: http://localhost:5000
-- **Mobile App**: Run on iOS simulator or Android emulator
-- **Desktop App**: Started locally
+**Desktop App:**
+```bash
+pnpm -rF @hospital/desktop run dev
+```
 
-### Docker Setup (Optional)
+### Production Build
+
+```bash
+# Build all applications
+pnpm build
+
+# Build specific apps
+pnpm -rF @hospital/web run build
+pnpm -rF @hospital/backend run build
+```
+
+### Docker Setup
+
 ```bash
 # Build and run with Docker Compose
-docker-compose up -d
+docker compose up -d
 
-# This will start:
-# - Backend API on port 5000
-# - PostgreSQL on port 5432
-# - Redis on port 6379
+# Stop services
+docker compose down
 ```
 
 ## Usage
