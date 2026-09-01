@@ -1,0 +1,41 @@
+{
+  "name": "hospital-management-system",
+  "version": "1.0.0",
+  "description": "A comprehensive hospital management system with web, mobile, and desktop applications",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "npm install && cd backend && npm install && cd ../app/web && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:web\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:web": "cd app/web && npm start",
+    "build": "npm run build:backend && npm run build:web",
+    "build:backend": "cd backend && npm run build",
+    "build:web": "cd app/web && npm run build",
+    "test": "npm run test:backend && npm run test:web",
+    "test:backend": "cd backend && npm test",
+    "test:web": "cd app/web && npm test",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "hospital",
+    "management",
+    "healthcare",
+    "patient",
+    "medical",
+    "appointment"
+  ],
+  "author": "XiHoyu",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
