@@ -2,6 +2,21 @@
 
 A comprehensive web-based application designed to streamline hospital operations, manage patient records, and improve healthcare service delivery.
 
+## Project Status
+
+**Status**: Under Development
+
+This project is currently in the planning and setup phase. Full implementation will begin soon. The folder structure, documentation, and configuration have been prepared. Development of features will start shortly.
+
+- [ ] Backend API Development
+- [ ] Web Application Development
+- [ ] Mobile App (iOS) Development
+- [ ] Mobile App (Android) Development
+- [ ] Desktop Application Development
+- [ ] Database Schema & Migrations
+- [ ] Testing Suite
+- [ ] Deployment & DevOps
+
 ## Table of Contents
 - [Features](#features)
 - [Technology Stack](#technology-stack)
