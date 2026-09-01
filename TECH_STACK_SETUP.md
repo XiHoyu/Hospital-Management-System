@@ -1,6 +1,6 @@
 # Tech Stack Setup Guide
 
-This guide explains how to set up your development environment for the Hospital Management System with the Airi-inspired tech stack.
+This guide explains how to set up your development environment for the Hospital Management System.
 
 ## Prerequisites
 

@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "Mobile application for Hospital Management System (iOS and Android via Capacitor)",
-  "scripts": {
+  "author": {
+    "name": "XI Hoyu"
+  },
     "dev:web": "vite",
     "dev:ios": "cap-vite -- ios",
     "dev:android": "cap-vite -- android",

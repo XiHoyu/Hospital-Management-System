@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "Desktop application for Hospital Management System using Electron",
-  "main": "main.js",
+  "author": {
+    "name": "XI Hoyu"
+  },
   "scripts": {
     "dev": "vite",
     "dev:electron": "electron .",

@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "Backend API server for Hospital Management System",
-  "main": "server.js",
+  "author": {
+    "name": "XI Hoyu"
+  },
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",

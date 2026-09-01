@@ -1,6 +1,6 @@
 # Tech Stack - Hospital Management System
 
-This document outlines the technology stack used in the Hospital Management System, based on the Airi project architecture.
+This document outlines the technology stack used in the Hospital Management System.
 
 ## Technology Stack Overview
 

@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "Web application for Hospital Management System",
-  "scripts": {
+  "author": {
+    "name": "XI Hoyu"
+  },
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
