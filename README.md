@@ -2,7 +2,7 @@
 
 A comprehensive web-based application designed to streamline hospital operations, manage patient records, and improve healthcare service delivery.
 
-## 📋 Table of Contents
+## Table of Contents
 - [Features](#features)
 - [Technology Stack](#technology-stack)
 - [Installation](#installation)
@@ -11,9 +11,9 @@ A comprehensive web-based application designed to streamline hospital operations
 - [Contributing](#contributing)
 - [License](#license)
 
-## ✨ Features
+## Features
 
-### 1. **Patient Management** 👥
+### 1. **Patient Management**
 - Patient registration and onboarding
 - Complete patient demographics (name, age, contact, address)
 - Emergency contact information
@@ -24,7 +24,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Patient portal access
 - Patient search and filtering
 
-### 2. **Appointment Management** 📅
+### 2. **Appointment Management**
 - Schedule appointments with doctors
 - Doctor availability calendar
 - Appointment reminders (SMS/Email/Push)
@@ -35,7 +35,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Video consultation scheduling
 - Recurring appointment management
 
-### 3. **Doctor & Staff Management** 👨‍⚕️
+### 3. **Doctor & Staff Management**
 - Doctor registration and credentials
 - Specialization management
 - License and certification tracking
@@ -47,7 +47,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Staff contact information
 - Department assignments
 
-### 4. **Electronic Health Records (EHR)** 📋
+### 4. **Electronic Health Records (EHR)**
 - Patient medical history
 - Chief complaints and diagnosis
 - Treatment plans and protocols
@@ -59,7 +59,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Radiology reports
 - Document storage and retrieval
 
-### 5. **Prescription Management** 💊
+### 5. **Prescription Management**
 - Digital prescription generation
 - Drug database with interactions
 - Dosage calculations
@@ -71,7 +71,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Expiration date monitoring
 - Prescription audit trail
 
-### 6. **Laboratory Management** 🧪
+### 6. **Laboratory Management**
 - Lab test ordering system
 - Sample collection tracking
 - Test result entry and storage
@@ -83,7 +83,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Integration with testing equipment
 - Lab inventory management
 
-### 7. **Radiology & Imaging** 🖼️
+### 7. **Radiology & Imaging**
 - Radiology order placement
 - DICOM image storage and retrieval
 - X-ray, CT, MRI, Ultrasound management
@@ -94,7 +94,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Image annotation tools
 - Film library management
 
-### 8. **Billing & Payments** 💳
+### 8. **Billing & Payments**
 - Invoice generation
 - Fee management by service/procedure
 - Insurance claim management
@@ -107,7 +107,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Tax calculation and reporting
 - Financial reports
 
-### 9. **Inventory Management** 📦
+### 9. **Inventory Management**
 - Medical supplies tracking
 - Equipment inventory
 - Expiration date monitoring
@@ -120,7 +120,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Stock distribution across departments
 - Waste tracking and disposal
 
-### 10. **Pharmacy Management** 💊
+### 10. **Pharmacy Management**
 - Drug inventory management
 - Purchase orders and supplier tracking
 - Stock counting and reconciliation
@@ -132,7 +132,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Medicine batch tracking
 - Return management
 
-### 11. **Bed Management** 🛏️
+### 11. **Bed Management**
 - Hospital bed allocation
 - Room and ward management
 - Bed occupancy status
@@ -143,7 +143,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Maintenance scheduling
 - Bed utilization reports
 
-### 12. **OPD (Outpatient Department)** 🏥
+### 12. **OPD (Outpatient Department)**
 - Out-patient registration
 - Consultation scheduling
 - Referral management
@@ -153,7 +153,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Token system
 - Queue management
 
-### 13. **IPD (Inpatient Department)** 🏨
+### 13. **IPD (Inpatient Department)**
 - Admission process
 - Ward/Room assignment
 - Daily ward rounds
@@ -164,7 +164,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Nursing notes
 - Care plans
 
-### 14. **Emergency Department** 🚨
+### 14. **Emergency Department**
 - Triage system
 - Emergency patient registration
 - Priority-based patient handling
@@ -174,7 +174,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Emergency contact notification
 - Immediate action tracking
 
-### 15. **Operation Theatre Management** 🏥
+### 15. **Operation Theatre Management**
 - Surgery scheduling
 - Operating room management
 - Surgeon and anesthesiologist scheduling
@@ -185,7 +185,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Equipment sterilization tracking
 - Operation theatre utilization reports
 
-### 16. **Nursing Management** 👩‍⚕️
+### 16. **Nursing Management**
 - Nurse assignment to patients
 - Nursing shift management
 - Patient care plans
@@ -195,7 +195,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Nursing task management
 - Patient monitoring
 
-### 17. **Dietary & Nutrition** 🍽️
+### 17. **Dietary & Nutrition**
 - Diet plan management
 - Dietary restrictions and allergies
 - Meal planning
@@ -205,7 +205,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Kitchen inventory management
 - Calorie and nutrient tracking
 
-### 18. **Housekeeping & Sanitation** 🧹
+### 18. **Housekeeping & Sanitation**
 - Cleaning task assignments
 - Room cleaning schedules
 - Waste management
@@ -215,7 +215,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Infection control tracking
 - Housekeeping reports
 
-### 19. **Medical Codes & Reference Data** 📚
+### 19. **Medical Codes & Reference Data**
 - ICD-10 codes for diagnosis
 - CPT codes for procedures
 - SNOMED CT coding
@@ -224,7 +224,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Medical history templates
 - Procedure templates
 
-### 20. **Compliance & Quality Management** ✅
+### 20. **Compliance & Quality Management**
 - Incident reporting
 - Complaint management
 - Quality audits
@@ -234,7 +234,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Audit logs and reports
 - Patient safety protocols
 
-### 21. **User Management & Security** 🔐
+### 21. **User Management & Security**
 - Role-based access control (RBAC)
 - User authentication (2FA, MFA)
 - Department-based permissions
@@ -244,7 +244,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Password policies
 - Session management
 
-### 22. **Communication & Messaging** 💬
+### 22. **Communication & Messaging**
 - Internal messaging system
 - Doctor-Patient communication
 - Notifications and alerts
@@ -254,7 +254,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Critical alert system
 - Broadcast messages
 
-### 23. **Analytics & Reporting** 📊
+### 23. **Analytics & Reporting**
 - Patient analytics
 - Doctor performance reports
 - Financial reports
@@ -266,7 +266,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Custom report builder
 - Data visualization and dashboards
 
-### 24. **Integration Features** 🔗
+### 24. **Integration Features**
 - EMR/EHR integration
 - Insurance company API integration
 - Lab equipment integration
@@ -276,7 +276,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Email/SMS gateway integration
 - Hospital website integration
 
-### 25. **Telemedicine & Remote Services** 📹
+### 25. **Telemedicine & Remote Services**
 - Video consultation capability
 - Audio consultation
 - Screen sharing for medical data
@@ -285,7 +285,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Remote prescription generation
 - Follow-up consultations
 
-### 26. **Mobile & Web Accessibility** 📱
+### 26. **Mobile & Web Accessibility**
 - Responsive web design
 - Native iOS app
 - Native Android app
@@ -294,7 +294,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Offline functionality
 - Cross-platform sync
 
-### 27. **Help & Support** ❓
+### 27. **Help & Support**
 - Knowledge base
 - FAQs
 - Ticketing system
@@ -303,7 +303,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - Video tutorials
 - User training materials
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Frontend & Client Apps
 - **Web Application**: React.js / Vue.js / Angular
@@ -349,7 +349,7 @@ A comprehensive web-based application designed to streamline hospital operations
 - **PDF Generation**: PDFKit / ReportLab
 - **Email Service**: SendGrid / AWS SES
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Node.js (v14 or higher) or Python 3.8+
@@ -445,9 +445,9 @@ docker-compose up -d
 # - Redis on port 6379
 ```
 
-## 🚀 Usage
+## Usage
 
-### For Patients 🤝
+### For Patients
 1. **Register/Login**: Create account via web app or mobile app
 2. **Find Doctor**: Browse available doctors by specialization
 3. **Book Appointment**: Select preferred date/time
@@ -457,7 +457,7 @@ docker-compose up -d
 7. **View Records**: Access all medical records in personal portal
 8. **Online Payments**: Pay bills securely through the app
 
-### For Doctors 👨‍⚕️
+### For Doctors
 1. **Login Dashboard**: Access via web/mobile/desktop app
 2. **View Schedule**: Check daily appointments
 3. **Patient Info**: Review patient history before consultation
@@ -467,7 +467,7 @@ docker-compose up -d
 7. **Lab Orders**: Order tests and view results
 8. **Referrals**: Refer patients to specialists
 
-### For Nurses 👩‍⚕️
+### For Nurses
 1. **Shift Management**: Check assigned shift and ward
 2. **Patient Monitoring**: Monitor vital signs and patient status
 3. **Care Plans**: Follow doctor's care plans for patients
@@ -475,7 +475,7 @@ docker-compose up -d
 5. **Medication Administration**: Track MAR (Medication Administration Records)
 6. **Patient Care**: Manage patient requests and needs
 
-### For Administrators 👔
+### For Administrators
 1. **Dashboard**: View system-wide statistics and reports
 2. **User Management**: Add/manage doctors, staff, patients
 3. **Hospital Settings**: Configure hospital policies
@@ -485,27 +485,27 @@ docker-compose up -d
 7. **Audit Logs**: Monitor system activity
 8. **System Maintenance**: Manage backups and updates
 
-### For Pharmacists 💊
+### For Pharmacists
 1. **Prescription Orders**: Receive and review prescriptions
 2. **Inventory Management**: Manage drug stock levels
 3. **Dispensing**: Dispense medicines to patients
 4. **Drug Interactions**: Check drug compatibility
 5. **Stock Reports**: Generate inventory reports
 
-### For Billing Staff 💰
+### For Billing Staff
 1. **Invoice Generation**: Create bills for treatments
 2. **Payment Processing**: Record payments received
 3. **Insurance Claims**: Submit insurance claims
 4. **Payment Tracking**: Monitor account receivables
 5. **Financial Reports**: Generate billing reports
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Hospital-Management-System/
 │
-├── app/                           # 📱 All client applications
-│   ├── web/                       # 🌐 Web application
+├── app/                           # All client applications
+│   ├── web/                       # Web application
 │   │   ├── src/
 │   │   ├── public/
 │   │   ├── components/
@@ -515,7 +515,7 @@ Hospital-Management-System/
 │   │   ├── package.json
 │   │   └── README.md
 │   │
-│   ├── mobile-app/                # 📱 Mobile applications
+│   ├── mobile-app/                # Mobile applications
 │   │   ├── ios/                   # iOS (Swift/Objective-C)
 │   │   │   ├── Hospital-Management/
 │   │   │   ├── Pods/
@@ -526,13 +526,13 @@ Hospital-Management-System/
 │   │       ├── gradle/
 │   │       └── build.gradle
 │   │
-│   └── desktop/                   # 🖥️ Desktop application (Electron)
+│   └── desktop/                   # Desktop application (Electron)
 │       ├── src/
 │       ├── main.js
 │       ├── preload.js
 │       └── package.json
 │
-├── backend/                       # 🔧 Backend API Server
+├── backend/                       # Backend API Server
 │   ├── routes/                    # API endpoints
 │   ├── controllers/               # Request handlers
 │   ├── models/                    # Database models
@@ -544,13 +544,13 @@ Hospital-Management-System/
 │   ├── package.json / requirements.txt
 │   └── README.md
 │
-├── database/                      # 💾 Database management
+├── database/                      # Database management
 │   ├── migrations/                # Database migration scripts
 │   ├── seeds/                     # Sample data
 │   ├── schema.sql
 │   └── README.md
 │
-├── docs/                          # 📚 Documentation
+├── docs/                          # Documentation
 │   ├── api/                       # API documentation
 │   │   ├── ENDPOINTS.md
 │   │   ├── AUTHENTICATION.md
@@ -566,7 +566,7 @@ Hospital-Management-System/
 │       ├── SCHEMA.md
 │       └── DATA_DICTIONARY.md
 │
-├── tests/                         # 🧪 Test suites
+├── tests/                         # Test suites
 │   ├── unit/                      # Unit tests
 │   │   ├── backend/
 │   │   └── frontend/
@@ -578,27 +578,27 @@ Hospital-Management-System/
 │       ├── scenarios/
 │       └── utils/
 │
-├── config/                        # ⚙️ Configuration files
+├── config/                        # Configuration files
 │   ├── development.env
 │   ├── production.env
 │   ├── testing.env
 │   ├── database.config.js
 │   └── app.config.js
 │
-├── scripts/                       # 🔨 Utility scripts
+├── scripts/                       # Utility scripts
 │   ├── setup.sh / setup.ps1      # Project setup script
 │   ├── deploy.sh / deploy.ps1    # Deployment script
 │   ├── migrate.sh / migrate.ps1  # Database migration script
 │   └── seed.sh / seed.ps1        # Seed database script
 │
 ├── .github/
-│   └── workflows/                # 🔄 CI/CD workflows
+│   └── workflows/                # CI/CD workflows
 │       ├── test.yml
 │       ├── build.yml
 │       └── deploy.yml
 │
 ├── .gitignore
-├── docker-compose.yml             # 🐳 Docker configuration
+├── docker-compose.yml             # Docker configuration
 ├── Dockerfile
 ├── package.json                   # Root package.json for monorepo
 ├── LICENSE

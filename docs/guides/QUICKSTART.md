@@ -119,7 +119,7 @@ cd app/mobile-app/android
 - Email: `patient@hospital.com`
 - Password: `Patient@123`
 
-**⚠️ IMPORTANT**: Change default passwords in production!
+**IMPORTANT**: Change default passwords in production!
 
 ---
 
@@ -197,8 +197,8 @@ docker-compose down -v
 
 ## Need Help?
 
-- 📖 **Documentation**: See `/docs` folder
-- 🐛 **Issues**: Report on GitHub Issues
-- 💬 **Questions**: Create a Discussion on GitHub
+- Documentation: See `/docs` folder
+- Issues: Report on GitHub Issues
+- Questions: Create a Discussion on GitHub
 
-Happy coding! 🏥
+Happy coding!
