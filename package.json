@@ -1,29 +1,43 @@
 {
   "name": "hospital-management-system",
-  "version": "1.0.0",
-  "description": "A comprehensive hospital management system with web, mobile, and desktop applications",
-  "private": true,
   "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "description": "A comprehensive hospital management system with web, mobile, and desktop applications",
+  "author": {
+    "name": "XiHoyu",
+    "url": "https://github.com/XiHoyu"
+  },
+  "license": "MIT",
   "scripts": {
-    "setup": "npm install && cd backend && npm install && cd ../app/web && npm install",
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:web\"",
-    "dev:backend": "cd backend && npm run dev",
-    "dev:web": "cd app/web && npm start",
-    "build": "npm run build:backend && npm run build:web",
-    "build:backend": "cd backend && npm run build",
-    "build:web": "cd app/web && npm run build",
-    "test": "npm run test:backend && npm run test:web",
-    "test:backend": "cd backend && npm test",
-    "test:web": "cd app/web && npm test",
-    "docker:build": "docker-compose build",
-    "docker:up": "docker-compose up -d",
-    "docker:down": "docker-compose down",
-    "docker:logs": "docker-compose logs -f"
+    "dev": "turbo run dev",
+    "dev:backend": "pnpm -rF @hospital/backend run dev",
+    "dev:web": "pnpm -rF @hospital/web run dev",
+    "dev:mobile": "pnpm -rF @hospital/mobile run dev",
+    "dev:desktop": "pnpm -rF @hospital/desktop run dev",
+    "build": "turbo run build",
+    "build:web": "pnpm -rF @hospital/web run build",
+    "build:mobile": "pnpm -rF @hospital/mobile run build",
+    "build:desktop": "pnpm -rF @hospital/desktop run build",
+    "build:backend": "pnpm -rF @hospital/backend run build",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "typecheck": "pnpm -rF=\"./apps/*\" -F=\"./packages/*\" --parallel typecheck",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "docker:build": "docker compose build",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
   },
-  "dependencies": {
-    "concurrently": "^8.2.0"
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.0.0",
+    "eslint": "^8.52.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "turbo": "^2.0.0",
+    "prettier": "^3.1.0"
   },
-  "devDependencies": {},
   "keywords": [
     "hospital",
     "management",
@@ -32,10 +46,8 @@
     "medical",
     "appointment"
   ],
-  "author": "XiHoyu",
-  "license": "MIT",
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6.0.0"
+    "node": ">=18.0.0",
+    "pnpm": "^9.0.0"
   }
 }

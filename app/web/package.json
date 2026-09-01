@@ -1,16 +1,17 @@
 {
-  "name": "hospital-web-app",
+  "name": "@hospital/web",
+  "type": "module",
   "version": "1.0.0",
-  "description": "Web application for Hospital Management System",
   "private": true,
+  "description": "Web application for Hospital Management System",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix",
-    "format": "prettier --write src/"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "typecheck": "vue-tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "react": "^18.2.0",

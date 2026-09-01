@@ -1,0 +1,60 @@
+{
+  "$schema": "https://turbo.build/json-schema.json",
+  "version": "2",
+  "globalDependencies": ["**/.env", "**/.env.local"],
+  "pipeline": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "outputs": ["dist/**", "build/**"],
+      "cache": true,
+      "dependsOn": ["^build"]
+    },
+    "build:web": {
+      "outputs": ["dist/**"],
+      "cache": true
+    },
+    "build:mobile": {
+      "outputs": ["dist/**"],
+      "cache": true
+    },
+    "build:desktop": {
+      "outputs": ["dist/**"],
+      "cache": true
+    },
+    "build:backend": {
+      "outputs": ["build/**"],
+      "cache": true
+    },
+    "test": {
+      "cache": false,
+      "outputs": ["coverage/**"]
+    },
+    "test:run": {
+      "cache": false,
+      "outputs": ["coverage/**"]
+    },
+    "typecheck": {
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    },
+    "lint:fix": {
+      "cache": false
+    },
+    "start": {
+      "cache": false,
+      "persistent": true
+    },
+    "docker:build": {
+      "cache": false
+    },
+    "docker:up": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

@@ -1,13 +1,17 @@
 {
-  "name": "hospital-mobile-app",
+  "name": "@hospital/mobile",
+  "type": "module",
   "version": "1.0.0",
-  "description": "Mobile application for Hospital Management System (iOS and Android)",
   "private": true,
+  "description": "Mobile application for Hospital Management System (iOS and Android via Capacitor)",
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "test": "jest",
+    "dev:web": "vite",
+    "dev:ios": "cap-vite -- ios",
+    "dev:android": "cap-vite -- android",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "typecheck": "vue-tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
